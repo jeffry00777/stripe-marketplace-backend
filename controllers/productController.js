@@ -45,7 +45,7 @@ exports.getSellerProducts = async (req, res) => {
     products.map(async (product) => {
       const imageId = product.images?.[0];
       const imageUrl = imageId
-        ? `http://localhost:5000/api/images/${imageId}/view`
+        ? `https://stripe-marketplace-backend.onrender.com:10000/api/images/${imageId}/view`
         : null;
 
       return {
